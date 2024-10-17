@@ -4,56 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kiran Kumar A - Landing Page</title>
+    <title>Kiran Kumar A - Portfolio</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 20px;
         }
+
         .container {
+            width: 100%;
+            max-width: 900px;
             text-align: center;
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
+
+        /* Card Styles */
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Profile Picture */
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Heading Styles */
         h1 {
             font-size: 36px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #0073b1;
             margin-bottom: 20px;
         }
-        p {
+
+        p, ul {
             font-size: 18px;
-            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.6;
+            text-align: left;
         }
-        a {
-            text-decoration: none;
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* LinkedIn Button */
+        .linkedin-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #f0f0f0;
             color: white;
-            background-color: #0073b1;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 10px 15px; /* Adjusted padding */
             font-size: 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
-        a:hover {
-            background-color: #005582;
+
+        .linkedin-btn:hover {
+            background-color: #e4f6ff;
         }
+
+        .linkedin-text {
+            font-weight: bold; /* Set text to bold */
+            font-size: 18px; /* Same font size as other text */
+            margin-right: 10px; /* Spacing between text and icon */
+        }
+
+        /* LinkedIn Icon */
+        .linkedin-icon {
+            width: 100px;
+            height: 20px; /* Ensured icon size */
+        }
+
+        /* Adding Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>About Me</h1>
-        <p>
-            I am Kiran Kumar A, a motivated and diligent Bachelor of Computer Applications (BCA) graduate from Seshadripuram First Grade College, Yelahanka. 
-            With a solid foundation in programming languages and a passion for software development and testing, I am eager to contribute to innovative projects in the tech industry.
-        </p>
-        <a href="https://linkedin.com/in/kirankumar21" target="_blank">Connect with me on LinkedIn</a>
+
+        <!-- Card 1: About Me -->
+        <div class="card">
+            <center>
+                <!-- Profile picture from GitHub repository -->
+                <img src="https://raw.githubusercontent.com/kirankumarwq/kirankumarwq/main/IMG_20240413_112501.jpg" alt="Kiran's Profile Picture" class="profile-pic">
+            </center>
+            <h1>Kiran Kumar A</h1>
+            <h2>About Me</h2>
+            <p>
+                I am Kiran Kumar A, a motivated and diligent Bachelor of Computer Applications (BCA) graduate from Seshadripuram First Grade College, Yelahanka. 
+                With a solid foundation in programming languages and a passion for software development and testing, I am eager to contribute to innovative projects in the tech industry.
+            </p>
+            <!-- LinkedIn Button -->
+            <div>
+                <span class="linkedin-text">Connect with me</span>
+                <a href="https://linkedin.com/in/kirankumar21" target="_blank" class="linkedin-btn">
+                    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt="LinkedIn Icon" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 2: Skills -->
+        <div class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, C++, Java, JavaScript, Python (intermediate level in all)</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Development Tools:</strong> Visual Studio Code, AutoHotkey, GitHub</li>
+                <li><strong>UI/UX Design:</strong> Figma, Framer</li>
+                <li><strong>Cloud Computing:</strong> AWS (Exploring)</li>
+                <li><strong>Containerization:</strong> Docker, Kubernetes</li>
+            </ul>
+        </div>
+
+        <!-- Card 3: Education -->
+        <div class="card">
+            <h2>Education</h2>
+            <p>Bachelor of Computer Applications (BCA) - Seshadripuram First Grade College, Yelahanka, 2023</p>
+        </div>
+
+        <!-- Card 4: Achievements -->
+        <div class="card">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Selected and participated in National Integration Camp in 2022, awarded Best Volunteer</li>
+                <li>Awarded Best RRC Volunteer and Best NSS Volunteer for the period 2020-23</li>
+                <li>Contributed to community service projects like health camps, blood donation drives, and environmental conservation initiatives</li>
+            </ul>
+        </div>
+
     </div>
 
 </body>
