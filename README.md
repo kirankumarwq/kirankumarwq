@@ -11,6 +11,8 @@ With a passion for collaboration and a focus on quality, I aim to grow into a so
 👯 I’m looking to work as a software developer, designer, or tester  
 🌱 I’m currently learning **Framer**, **Figma**, and intermediate coding skills in various programming languages.
 
+## 🌐 Website:
+https://kirankumarwq.github.io/kirankumarwq/
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/KiranKumar21) 
 
