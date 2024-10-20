@@ -79,39 +79,107 @@
             margin-bottom: 10px;
         }
 
-        /* LinkedIn Button */
-        .linkedin-btn {
+        /* Buttons (LinkedIn & Contact Me) */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn {
             display: inline-flex;
             align-items: center;
-            background-color: #f0f0f0;
+            background-color: #0077b5;
             color: white;
-            padding: 10px 15px; /* Adjusted padding */
+            padding: 10px 20px;
             font-size: 18px;
             border-radius: 10px;
             text-decoration: none;
-            margin-top: 20px;
             transition: background-color 0.3s ease;
+            cursor: pointer;
         }
 
-        .linkedin-btn:hover {
-            background-color: #e4f6ff;
+        .btn:hover {
+            background-color: #005582;
         }
 
-        .linkedin-text {
-            font-weight: bold; /* Set text to bold */
-            font-size: 18px; /* Same font size as other text */
-            margin-right: 10px; /* Spacing between text and icon */
-        }
-
-        /* LinkedIn Icon */
         .linkedin-icon {
-            width: 100px;
-            height: 20px; /* Ensured icon size */
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .contact-icon{
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
         }
 
-        /* Adding Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        /* Contact Form */
+        .contact-form {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .contact-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #005582;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p, ul {
+                font-size: 16px;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+                padding: 12px;
+            }
+        }
     </style>
+
+    <script>
+        function toggleContactForm() {
+            const form = document.getElementById('contactForm');
+            if (form.style.display === 'none' || form.style.display === '') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -129,39 +197,59 @@
                 I am Kiran Kumar A, a motivated and diligent Bachelor of Computer Applications (BCA) graduate from Seshadripuram First Grade College, Yelahanka. 
                 With a solid foundation in programming languages and a passion for software development and testing, I am eager to contribute to innovative projects in the tech industry.
             </p>
-            <!-- LinkedIn Button -->
-            <div>
-                <span class="linkedin-text">Connect with me</span>
-                <a href="https://linkedin.com/in/kirankumar21" target="_blank" class="linkedin-btn">
-                    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt="LinkedIn Icon" class="linkedin-icon">
+
+            <!-- Buttons (LinkedIn & Contact Me) -->
+            <div class="button-container">
+                <a href="https://linkedin.com/in/kirankumar21" target="_blank" class="btn">
+                    <!-- Inline SVG for LinkedIn icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="linkedin-icon" viewBox="0 0 24 24" fill="white">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.429c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.429h-3v-5.509c0-1.314-.025-3.009-1.835-3.009-1.837 0-2.118 1.436-2.118 2.921v5.597h-3v-10h2.879v1.367h.041c.401-.759 1.379-1.561 2.841-1.561 3.039 0 3.599 2.002 3.599 4.604v5.59z"/>
+                    </svg>
+                    LinkedIn
                 </a>
+                <button class="btn" onclick="toggleContactForm()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/893/893292.png" alt="Contact Icon" class="contact-icon">
+                    Contact Me
+                </button>
+            </div>
+
+            <!-- Contact Form -->
+            <div id="contactForm" class="contact-form">
+                <h2>Contact Me</h2>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Submit</button>
             </div>
         </div>
 
-        <!-- Card 2: Skills -->
+        <!-- Additional cards for Skills, Education, Achievements (omitted for brevity) -->
+        <!-- Example Card for Skills -->
         <div class="card">
             <h2>Skills</h2>
             <ul>
-                <li><strong>Programming Languages:</strong> C, C++, Java, JavaScript, Python (intermediate level in all)</li>
-                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
-                <li><strong>Development Tools:</strong> Visual Studio Code, AutoHotkey, GitHub</li>
-                <li><strong>UI/UX Design:</strong> Figma, Framer</li>
-                <li><strong>Cloud Computing:</strong> AWS (Exploring)</li>
-                <li><strong>Containerization:</strong> Docker, Kubernetes</li>
+                <li>C, C++, Java, JavaScript, Python</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>MySQL, SQL</li>
+                <li>Visual Studio Code, GitHub</li>
             </ul>
         </div>
 
-        <!-- Card 3: Education -->
+        <!-- Example Card for Education -->
         <div class="card">
             <h2>Education</h2>
-            <p>Bachelor of Computer Applications (BCA) - Seshadripuram First Grade College, Yelahanka, 2023</p>
+            <ul>
+                <li>Bachelor of Computer Applications, Seshadripuram First Grade College, Yelahanka - 2023</li>
+            </ul>
         </div>
 
-        <!-- Card 4: Achievements -->
+        <!-- Example Card for Achievements -->
         <div class="card">
             <h2>Achievements</h2>
             <ul>
-                <li>Selected and participated in National Integration Camp in 2022, awarded Best Volunteer</li>
+                <li>Selected for National Integration Camp in 2022, awarded Best NSS Volunteer</li>
+                <li>Best RRC Volunteer for 2020-2023</li>
+               <li>Selected and participated in National Integration Camp in 2022, awarded Best Volunteer</li>
                 <li>Awarded Best RRC Volunteer and Best NSS Volunteer for the period 2020-23</li>
                 <li>Contributed to community service projects like health camps, blood donation drives, and environmental conservation initiatives</li>
             </ul>
