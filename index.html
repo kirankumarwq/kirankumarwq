@@ -79,7 +79,7 @@
             margin-bottom: 10px;
         }
 
-        /* Buttons (LinkedIn & Contact Me) */
+        /* Buttons (LinkedIn) */
         .button-container {
             display: flex;
             justify-content: center;
@@ -109,40 +109,6 @@
             height: 24px;
             margin-right: 10px;
         }
-        .contact-icon{
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            display: none;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        .contact-form input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #0077b5;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: #005582;
-        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -169,17 +135,6 @@
             }
         }
     </style>
-
-    <script>
-        function toggleContactForm() {
-            const form = document.getElementById('contactForm');
-            if (form.style.display === 'none' || form.style.display === '') {
-                form.style.display = 'block';
-            } else {
-                form.style.display = 'none';
-            }
-        }
-    </script>
 </head>
 <body>
 
@@ -194,11 +149,11 @@
             <h1>Kiran Kumar A</h1>
             <h2>About Me</h2>
             <p>
-                I am Kiran Kumar A, a motivated and diligent Bachelor of Computer Applications (BCA) graduate from Seshadripuram First Grade College, Yelahanka. 
+              <strong>I am Kiran Kumar A</strong>, a motivated and diligent Bachelor of Computer Applications (BCA) graduate from Seshadripuram First Grade College, Yelahanka. 
                 With a solid foundation in programming languages and a passion for software development and testing, I am eager to contribute to innovative projects in the tech industry.
             </p>
 
-            <!-- Buttons (LinkedIn & Contact Me) -->
+            <!-- Button (LinkedIn) -->
             <div class="button-container">
                 <a href="https://linkedin.com/in/kirankumar21" target="_blank" class="btn">
                     <!-- Inline SVG for LinkedIn icon -->
@@ -207,20 +162,6 @@
                     </svg>
                     LinkedIn
                 </a>
-                <button class="btn" onclick="toggleContactForm()">
-                    <img src="https://cdn-icons-png.flaticon.com/512/893/893292.png" alt="Contact Icon" class="contact-icon">
-                    Contact Me
-                </button>
-            </div>
-
-            <!-- Contact Form -->
-            <div id="contactForm" class="contact-form">
-                <h2>Contact Me</h2>
-                <input type="text" id="Name" placeholder="Name" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="text" id="Message" placeholder="Message" required>
-    
-                <button type="submit">Submit</button>
             </div>
         </div>
 
@@ -229,10 +170,13 @@
         <div class="card">
             <h2>Skills</h2>
             <ul>
-                <li>C, C++, Java, JavaScript, Python</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>MySQL, SQL</li>
-                <li>Visual Studio Code, GitHub</li>
+                <li><strong>Programming Languages:</strong> C, C++, Java, JavaScript, Python (intermediate level in all)</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Development Tools:</strong> Visual Studio Code, AutoHotkey, GitHub</li>
+              <li><strong>Database:</strong> SQL</li>
+                <li><strong>UI/UX Design:</strong> Figma, Framer</li>
+                <li><strong>Cloud Computing:</strong> AWS (Exploring)</li>
+                <li><strong>Containerization:</strong> Docker, Kubernetes(Exploring)</li>
             </ul>
         </div>
 
@@ -250,8 +194,6 @@
             <ul>
                 <li>Selected for National Integration Camp in 2022, awarded Best NSS Volunteer</li>
                 <li>Best RRC Volunteer for 2020-2023</li>
-               <li>Selected and participated in National Integration Camp in 2022, awarded Best Volunteer</li>
-                <li>Awarded Best RRC Volunteer and Best NSS Volunteer for the period 2020-23</li>
                 <li>Contributed to community service projects like health camps, blood donation drives, and environmental conservation initiatives</li>
             </ul>
         </div>
