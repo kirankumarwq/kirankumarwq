@@ -12,7 +12,8 @@ With a passion for collaboration and a focus on quality, I aim to grow into a so
 🌱 I’m currently learning **Framer**, **Figma**, and intermediate coding skills in various programming languages.
 
 ## 🌐 Website:
-[https://kirankumarwq.github.io/kirankumarwq/](https://kirankumarwq.github.io/kirankumarwq/) [https://kirankumarwq.github.io/Little_Lemon_website/](https://kirankumarwq.github.io/Little_Lemon_website/)
+[My Simple Portfolio (in progress)](https://kirankumarwq.github.io/kirankumarwq/) 
+[Front-end Developer Capstone project Little Lemon Restarunt Website](https://kirankumarwq.github.io/Little_Lemon_website/)
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/KiranKumar21) 
 
