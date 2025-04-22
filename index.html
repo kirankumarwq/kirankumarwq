@@ -3,202 +3,821 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kiran Kumar A - Portfolio</title>
+    <title>Kiran Kumar | Frontend Developer</title>
+    <meta name="description" content="Professional portfolio of Kiran Kumar, Frontend Developer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
+        :root {
+            --primary: #3B82F6;
+            --primary-light: #93C5FD;
+            --primary-dark: #1D4ED8;
+            --secondary: #10B981;
+            --accent: #F59E0B;
+            --light: #F8FAFC;
+            --dark: #1E293B;
+            --text: #334155;
+            --text-light: #64748B;
+        }
+        
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 900px;
-            text-align: center;
-        }
-
-        /* Card Styles */
-        .card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Profile Picture */
-        .profile-pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        /* Heading Styles */
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #0073b1;
-            margin-bottom: 20px;
-        }
-
-        p, ul {
-            font-size: 18px;
-            color: #555;
+            background-color: #FFFFFF;
+            color: var(--text);
+            scroll-behavior: smooth;
             line-height: 1.6;
-            text-align: left;
         }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        li {
-            margin-bottom: 10px;
+        
+        .animate-fade {
+            animation: fadeIn 0.8s ease-out forwards;
         }
-
-        /* Buttons (LinkedIn) */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+        
+        .text-primary {
+            color: var(--primary);
         }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            background-color: #0077b5;
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            border: 1px solid #E2E8F0;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background: var(--primary);
+            transition: width 0.3s ease;
+            border-radius: 3px;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .skill-badge {
+            background: #F1F5F9;
+            color: var(--text);
+            transition: all 0.2s ease;
+            border-radius: 12px;
+            border: 1px solid #E2E8F0;
+        }
+        
+        .skill-badge:hover {
+            transform: translateY(-3px);
+            background: var(--primary);
             color: white;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
         }
-
-        .btn:hover {
-            background-color: #005582;
+        
+        section {
+            padding: 100px 0;
         }
-
-        .linkedin-icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
+        
+        .text-muted {
+            color: var(--text-light);
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-
-            p, ul {
-                font-size: 16px;
-            }
-
-            .btn {
-                width: 100%;
-                justify-content: center;
-                padding: 12px;
-            }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+        
+        .section-hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .section-show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Button styles */
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-outline {
+            border: 2px solid #E2E8F0;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Project card overlay */
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        
+        /* Floating elements */
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-
-        <!-- Card 1: About Me -->
-        <div class="card">
-            <center>
-                <!-- Profile picture from GitHub repository -->
-                <img src="https://raw.githubusercontent.com/kirankumarwq/kirankumarwq/main/IMG_20240413_112501.jpg" alt="Kiran's Profile Picture" class="profile-pic">
-            </center>
-            <h1>Kiran Kumar A</h1>
-            <h2>About Me</h2>
-            <p>
-              <strong>I am Kiran Kumar A</strong>, a motivated and diligent Bachelor of Computer Applications (BCA) graduate from Seshadripuram First Grade College, Yelahanka. 
-                With a solid foundation in programming languages and a passion for software development and testing, I am eager to contribute to innovative projects in the tech industry.
-            </p>
-
-            <!-- Button (LinkedIn) -->
-            <div class="button-container">
-                <a href="https://linkedin.com/in/kirankumar21" target="_blank" class="btn">
-                    <!-- Inline SVG for LinkedIn icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="linkedin-icon" viewBox="0 0 24 24" fill="white">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.429c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.429h-3v-5.509c0-1.314-.025-3.009-1.835-3.009-1.837 0-2.118 1.436-2.118 2.921v5.597h-3v-10h2.879v1.367h.041c.401-.759 1.379-1.561 2.841-1.561 3.039 0 3.599 2.002 3.599 4.604v5.59z"/>
-                    </svg>
-                    LinkedIn
-                </a>
-            </div>
-        </div>
-
-        <!-- Additional cards for Skills, Education, Achievements (omitted for brevity) -->
-        <!-- Example Card for Skills -->
-        <div class="card">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> C, C++, Java, JavaScript, Python (intermediate level in all)</li>
-                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
-                <li><strong>Development Tools:</strong> Visual Studio Code, AutoHotkey, GitHub</li>
-              <li><strong>Database:</strong> SQL</li>
-                <li><strong>UI/UX Design:</strong> Figma, Framer</li>
-                <li><strong>Cloud Computing:</strong> AWS (Exploring)</li>
-                <li><strong>Containerization:</strong> Docker, Kubernetes(Exploring)</li>
-            </ul>
-        </div>
-
-        <!-- Example Card for Education -->
-        <div class="card">
-            <h2>Education</h2>
-            <ul>
-                <li>Bachelor of Computer Applications, Seshadripuram First Grade College, Yelahanka - 2023</li>
-            </ul>
-        </div>
-
-        <!-- Example Card for Achievements -->
-        <div class="card">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Selected for National Integration Camp in 2022, awarded Best NSS Volunteer</li>
-                <li>Best RRC Volunteer for 2020-2023</li>
-                <li>Contributed to community service projects like health camps, blood donation drives, and environmental conservation initiatives</li>
-            </ul>
-        </div>
-
+    <!-- Floating background elements -->
+    <div class="fixed -z-10 inset-0 overflow-hidden">
+        <div class="absolute w-64 h-64 rounded-full bg-blue-50 blur-3xl opacity-40 top-1/4 -left-16 floating" style="animation-delay: 0s;"></div>
+        <div class="absolute w-72 h-72 rounded-full bg-blue-50 blur-3xl opacity-40 bottom-1/4 -right-20 floating" style="animation-delay: 2s;"></div>
     </div>
 
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="container mx-auto px-6 py-5">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-medium text-lg shadow-md">K</div>
+                    <span class="text-xl font-bold text-primary">Kiran Kumar</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#about" class="nav-link font-medium text-lg">About</a>
+                    <a href="#skills" class="nav-link font-medium text-lg">Skills</a>
+                    <a href="#projects" class="nav-link font-medium text-lg">Projects</a>
+                    <a href="#experience" class="nav-link font-medium text-lg">Journey</a>
+                    <a href="#contact" class="nav-link font-medium text-lg">Contact</a>
+                </nav>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-3 pb-3">
+                <a href="#about" class="block px-5 py-3 rounded-xl text-gray-700 hover:bg-gray-100 font-medium">About</a>
+                <a href="#skills" class="block px-5 py-3 rounded-xl text-gray-700 hover:bg-gray-100 font-medium">Skills</a>
+                <a href="#projects" class="block px-5 py-3 rounded-xl text-gray-700 hover:bg-gray-100 font-medium">Projects</a>
+                <a href="#experience" class="block px-5 py-3 rounded-xl text-gray-700 hover:bg-gray-100 font-medium">Journey</a>
+                <a href="#contact" class="block px-5 py-3 rounded-xl text-gray-700 hover:bg-gray-100 font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="container mx-auto px-6 py-24 md:py-36">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-16">
+                <div class="md:w-1/2 animate-fade">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Hi, I'm <span class="text-primary">Kiran Kumar</span>
+                    </h1>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-muted mb-8">
+                        Frontend Developer
+                    </h2>
+                    <p class="text-xl text-muted mb-10 max-w-xl">
+                        I craft exceptional digital experiences with clean, efficient code and pixel-perfect designs.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-5">
+                        <a href="#contact" class="px-8 py-4 btn-primary rounded-xl font-medium text-lg flex items-center shadow-lg hover:shadow-xl">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane ml-3"></i>
+                        </a>
+                        <a href="#projects" class="px-8 py-4 btn-outline rounded-xl font-medium text-lg flex items-center">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-down ml-3"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="flex mt-10 space-x-5">
+                        <a href="https://github.com/kirankumarwq" target="_blank" class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-all duration-300 shadow-sm hover:shadow-md">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kirankumar21/" target="_blank" class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-all duration-300 shadow-sm hover:shadow-md">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="mailto:kirankumar21200211@gmail.com" class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-all duration-300 shadow-sm hover:shadow-md">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center animate-fade" style="animation-delay: 0.3s">
+                    <div class="relative w-80 h-80 md:w-96 md:h-96">
+                        <div class="absolute inset-0 bg-blue-100 rounded-3xl shadow-2xl transform rotate-6"></div>
+                        <div class="absolute inset-0 bg-blue-50 rounded-3xl shadow-2xl transform -rotate-6"></div>
+                        <div class="absolute inset-4 bg-white rounded-2xl shadow-xl flex items-center justify-center overflow-hidden">
+                            <div class="text-center p-8">
+                                <div class="w-32 h-32 md:w-36 md:h-36 mx-auto rounded-full bg-primary flex items-center justify-center text-white shadow-lg mb-8">
+                                    <i class="fas fa-code text-5xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-3">Kiran Kumar</h3>
+                                <p class="text-muted text-lg">Frontend Developer</p>
+                                <div class="mt-6 flex justify-center space-x-2">
+                                    <span class="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+                                    <span class="w-3 h-3 rounded-full bg-secondary animate-pulse" style="animation-delay: 0.2s"></span>
+                                    <span class="w-3 h-3 rounded-full bg-accent animate-pulse" style="animation-delay: 0.4s"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-50 scroll-mt-20 section-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">
+                        <span class="text-primary">About Me</span>
+                    </h2>
+                    <p class="text-xl text-muted max-w-2xl mx-auto">
+                        Get to know the person behind the code
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="card p-10">
+                        <h3 class="text-3xl font-bold mb-8">My Story</h3>
+                        <div class="space-y-6">
+                            <p class="text-muted">
+                                I'm a passionate frontend developer with a love for creating beautiful, functional interfaces. My journey in web development began during my college years when I built my first website, and I've been hooked ever since.
+                            </p>
+                            <p class="text-muted">
+                                What excites me most about frontend development is the perfect blend of creativity and logic. I enjoy solving complex problems while ensuring the end result is visually appealing and intuitive for users.
+                            </p>
+                            <p class="text-muted">
+                                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while sketching UI ideas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-10">
+                        <h3 class="text-3xl font-bold mb-8">My Approach</h3>
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 flex-shrink-0 shadow-md">
+                                    <i class="fas fa-lightbulb text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-2">User-Centric Design</h4>
+                                    <p class="text-muted">I prioritize creating intuitive interfaces that provide seamless user experiences.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 flex-shrink-0 shadow-md">
+                                    <i class="fas fa-code text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-2">Clean Code</h4>
+                                    <p class="text-muted">I write maintainable, efficient code following best practices and modern standards.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 flex-shrink-0 shadow-md">
+                                    <i class="fas fa-mobile-alt text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-2">Responsive Focus</h4>
+                                    <p class="text-muted">Every project is built to work flawlessly across all devices and screen sizes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="scroll-mt-20 section-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">
+                        <span class="text-primary">My Skills</span>
+                    </h2>
+                    <p class="text-xl text-muted max-w-2xl mx-auto">
+                        Technologies I work with to bring ideas to life
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card p-8">
+                        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mb-6 shadow-lg">
+                            <i class="fas fa-laptop-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-6">Core Frontend</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-badge px-4 py-2 rounded-xl">HTML5</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">CSS3</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">JavaScript</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">TypeScript</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Responsive Design</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Accessibility</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-8">
+                        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mb-6 shadow-lg">
+                            <i class="fab fa-react text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-6">Frameworks & Libraries</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-badge px-4 py-2 rounded-xl">React.js</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Next.js</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Redux</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Tailwind CSS</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">SASS</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Styled Components</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-8">
+                        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mb-6 shadow-lg">
+                            <i class="fas fa-tools text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-6">Tools & Testing</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-badge px-4 py-2 rounded-xl">Git</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">GitHub</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">VS Code</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Figma</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Jest</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">React Testing Library</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-8">
+                        <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mb-6 shadow-lg">
+                            <i class="fas fa-rocket text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-6">Performance & Optimization</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-badge px-4 py-2 rounded-xl">Webpack</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Vite</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Lighthouse</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Chrome DevTools</span>
+                            <span class="skill-badge px-4 py-2 rounded-xl">Bundle Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-gray-50 scroll-mt-20 section-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">
+                        <span class="text-primary">Featured Projects</span>
+                    </h2>
+                    <p class="text-xl text-muted max-w-2xl mx-auto">
+                        A selection of my recent work
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="card overflow-hidden h-full flex flex-col project-card">
+                        <div class="h-60 bg-blue-500 flex items-center justify-center relative overflow-hidden">
+                            <div class="project-overlay"></div>
+                            <i class="fas fa-utensils text-white text-6xl z-10"></i>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10 transform translate-y-4 transition-transform duration-300 project-card-hover:translate-y-0">
+                                <h3 class="text-2xl font-bold text-white">Little Lemon Restaurant</h3>
+                                <p class="text-gray-200 mt-1">Modern restaurant website</p>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <p class="text-muted mb-6">
+                                A complete restaurant website with online reservations, menu display, and responsive design built with React and Supabase.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-lg text-sm">React</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-lg text-sm">Supabase</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-lg text-sm">Responsive</span>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8">
+                            <a href="https://kirankumarwq.github.io/Little_Lemon_website/" target="_blank" class="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors text-lg">
+                                View Project <i class="fas fa-external-link-alt ml-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="card overflow-hidden h-full flex flex-col project-card">
+                        <div class="h-60 bg-green-500 flex items-center justify-center relative overflow-hidden">
+                            <div class="project-overlay"></div>
+                            <i class="fas fa-store text-white text-6xl z-10"></i>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10 transform translate-y-4 transition-transform duration-300 project-card-hover:translate-y-0">
+                                <h3 class="text-2xl font-bold text-white">E-commerce Dashboard</h3>
+                                <p class="text-gray-200 mt-1">Product management system</p>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <p class="text-muted mb-6">
+                                Interactive dashboard for managing products, orders, and customer data with real-time analytics.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-lg text-sm">React</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-lg text-sm">Chart.js</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-lg text-sm">Responsive</span>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8">
+                            <a href="#" class="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors text-lg">
+                                Case Study <i class="fas fa-book-open ml-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="card overflow-hidden h-full flex flex-col project-card">
+                        <div class="h-60 bg-amber-500 flex items-center justify-center relative overflow-hidden">
+                            <div class="project-overlay"></div>
+                            <i class="fas fa-user-tie text-white text-6xl z-10"></i>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 z-10 transform translate-y-4 transition-transform duration-300 project-card-hover:translate-y-0">
+                                <h3 class="text-2xl font-bold text-white">Portfolio Website</h3>
+                                <p class="text-gray-200 mt-1">Modern developer portfolio</p>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-grow">
+                            <p class="text-muted mb-6">
+                                A responsive portfolio website with animations and clean design built with HTML, CSS, and JavaScript.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-lg text-sm">HTML5</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-lg text-sm">CSS3</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-lg text-sm">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8">
+                            <a href="#" class="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors text-lg">
+                                View Code <i class="fab fa-github ml-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <a href="#" class="px-8 py-4 btn-primary rounded-xl font-medium text-lg inline-flex items-center shadow-lg hover:shadow-xl">
+                        <span>View All Projects</span>
+                        <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="scroll-mt-20 section-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">
+                        <span class="text-primary">My Journey</span>
+                    </h2>
+                    <p class="text-xl text-muted max-w-2xl mx-auto">
+                        Education, certifications, and achievements
+                    </p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <!-- Timeline -->
+                    <div class="space-y-10">
+                        <!-- Education -->
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 shadow-lg">
+                                    <i class="fas fa-graduation-cap text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold">Bachelor of Computer Applications</h3>
+                                    <p class="text-muted">Seshadripuram First Grade College, Yelahanka</p>
+                                </div>
+                            </div>
+                            <div class="ml-20 pl-6 border-l-2 border-gray-200">
+                                <p class="text-sm text-muted mb-4">2020 – 2023</p>
+                                <p class="text-muted">
+                                    Completed my BCA degree with focus on software development, web technologies, and database management. Key coursework included Web Development, Data Structures, Database Systems, and Software Engineering.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Certification -->
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 shadow-lg">
+                                    <i class="fas fa-certificate text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold">Meta Front-End Developer</h3>
+                                    <p class="text-muted">Coursera Certification</p>
+                                </div>
+                            </div>
+                            <div class="ml-20 pl-6 border-l-2 border-gray-200">
+                                <p class="text-sm text-muted mb-4">Expected Completion: January 2025</p>
+                                <p class="text-muted mb-4">
+                                    Comprehensive certification covering HTML, CSS, JavaScript, React, UI/UX principles, and front-end development best practices. This program includes hands-on projects to build real-world applications.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-lg text-sm">HTML/CSS</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 rounded-lg text-sm">JavaScript</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-lg text-sm">React</span>
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-lg text-sm">UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievements -->
+                        <div class="card p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 shadow-lg">
+                                    <i class="fas fa-trophy text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold">Achievements</h3>
+                                    <p class="text-muted">Recognitions and awards</p>
+                                </div>
+                            </div>
+                            <div class="ml-20 pl-6 border-l-2 border-gray-200">
+                                <ul class="space-y-5">
+                                    <li class="flex items-start">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-primary mr-4 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Best NSS Volunteer (2022)</h4>
+                                            <p class="text-muted">Recognized for outstanding service and leadership in the National Service Scheme program.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-primary mr-4 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Best RRC Volunteer (2020–2023)</h4>
+                                            <p class="text-muted">Awarded for consistent dedication and contributions to the Red Ribbon Club initiatives.</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-primary mr-4 mt-1 flex-shrink-0">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-50 scroll-mt-20 section-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">
+                        <span class="text-primary">Get In Touch</span>
+                    </h2>
+                    <p class="text-xl text-muted max-w-2xl mx-auto">
+                        Let's build something amazing together
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    <div class="card p-10">
+                        <h3 class="text-3xl font-bold mb-8">Contact Information</h3>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 shadow-lg">
+                                    <i class="fas fa-envelope text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1">Email</h4>
+                                    <a href="mailto:kirankumar21200211@gmail.com" class="text-muted hover:text-primary transition-colors text-lg">kirankumar21200211@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 shadow-lg">
+                                    <i class="fas fa-phone-alt text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1">Phone</h4>
+                                    <a href="tel:+916362309060" class="text-muted hover:text-primary transition-colors text-lg">+91 6362309060</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 shadow-lg">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1">GitHub</h4>
+                                    <a href="https://github.com/kirankumarwq" target="_blank" class="text-muted hover:text-primary transition-colors text-lg">github.com/kirankumarwq</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white mr-6 shadow-lg">
+                                    <i class="fab fa-linkedin-in text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/kirankumar21/" target="_blank" class="text-muted hover:text-primary transition-colors text-lg">linkedin.com/in/kirankumar21</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h4 class="text-xl font-semibold mb-4">Currently Available For</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-blue-100 text-blue-600 rounded-xl text-lg">Freelance Projects</span>
+                                <span class="px-4 py-2 bg-blue-100 text-blue-600 rounded-xl text-lg">Full-time Roles</span>
+                                <span class="px-4 py-2 bg-blue-100 text-blue-600 rounded-xl text-lg">Collaborations</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-10">
+                        <h3 class="text-3xl font-bold mb-8">Send Me a Message</h3>
+                        
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-lg font-medium text-muted mb-3">Name</label>
+                                <input type="text" id="name" class="w-full px-5 py-4 rounded-xl bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-lg font-medium text-muted mb-3">Email</label>
+                                <input type="email" id="email" class="w-full px-5 py-4 rounded-xl bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-lg font-medium text-muted mb-3">Message</label>
+                                <textarea id="message" rows="6" class="w-full px-5 py-4 rounded-xl bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full px-8 py-4 btn-primary rounded-xl font-medium text-lg mt-4 shadow-lg hover:shadow-xl transition-all duration-300">
+                                Send Message <i class="fas fa-paper-plane ml-3"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-medium text-lg shadow-md">K</div>
+                        <span class="text-xl font-bold text-primary">Kiran Kumar</span>
+                    </div>
+                    <p class="text-muted text-lg mt-2">Crafting digital experiences with code and creativity</p>
+                </div>
+                
+                <div class="flex space-x-5">
+                    <a href="https://github.com/kirankumarwq" target="_blank" class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-all duration-300 shadow-sm hover:shadow-md">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kirankumar21/" target="_blank" class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-all duration-300 shadow-sm hover:shadow-md">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="mailto:kirankumar21200211@gmail.com" class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-all duration-300 shadow-sm hover:shadow-md">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-200 text-center text-muted text-lg">
+                <p>&copy; <span id="current-year"></span> Kiran Kumar. All rights reserved.</p>
+                <p class="mt-3">Built with <i class="fas fa-heart text-red-500 mx-1.5"></i> and modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Update year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Section reveal animation
+        const sections = document.querySelectorAll('.section-hidden');
+        
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-show');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+    </script>
 </body>
 </html>
