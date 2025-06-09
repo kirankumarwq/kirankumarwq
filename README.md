@@ -1,82 +1,92 @@
-<!-- Profile Banner (Optional) -->
-<!-- ![Banner](https://your-image-url.com/banner.jpg) -->
+# 🚀 Welcome to My GitHub! I'm Kiran Kumar A
 
-# 👋 Hi, I'm Kiran Kumar A
+![Profile Banner](https://your-image-url.com/banner.jpg)
 
-I am a BCA graduate with expertise in software development, game testing, and franchise management. Currently, I work at Velocity Venture, specializing in identifying game vulnerabilities and ensuring secure game releases.
-
-With a passion for collaboration and a focus on quality, I aim to grow into a software development or testing role, contributing to impactful projects in the tech industry.
-
----
-
-## 🚀 Projects
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://kirankumarwq.github.io/kirankumarwq/assets/franchise-system.png" width="200px"><br>
-      <b>Franchise Management System</b><br>
-      Visual Basic & SQL<br>
-      <a href="https://github.com/kirankumarwq/Franchise-Management-System">View Project</a>
-    </td>
-    <td align="center">
-      <img src="https://kirankumarwq.github.io/Little_Lemon_website/assets/little-lemon.png" width="200px"><br>
-      <b>Little Lemon Restaurant Website</b><br>
-      Front-End Capstone<br>
-      <a href="https://kirankumarwq.github.io/Little_Lemon_website/">Live Demo</a> • <a href="https://github.com/kirankumarwq/Little_Lemon_website">Source Code</a>
-    </td>
-  </tr>
-  <!-- Add more projects as needed -->
-</table>
-
----
-
-## 💼 Experience & Skills
-
-- **Current Role:** Game Tester at Velocity Venture
-- **Key Skills:** Software Development, Game Testing, Franchise Management, Vulnerability Assessment
-- **Learning:** Framer, Figma, Intermediate programming in various languages
-
----
-
-## 🌐 Website & Portfolio
-
-- [Simple Portfolio (in progress)](https://kirankumarwq.github.io/kirankumarwq/)
-- [Little Lemon Restaurant Website](https://kirankumarwq.github.io/Little_Lemon_website/)
-
-## 🤝 Connect with Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/KiranKumar21) 
-
----
-
-## 💻 Tech Stack
-
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=plastic&logo=c&logoColor=white)
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=plastic&logo=csharp&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=plastic&logo=c%2B%2B&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=plastic&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=plastic&logo=python&logoColor=ffdd54)
-![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=plastic&logo=github&logoColor=white)
-![.Net](https://img.shields.io/badge/.NET-5C2D91?style=plastic&logo=.net&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white)
-![Framer](https://img.shields.io/badge/Framer-black?style=plastic&logo=framer&logoColor=blue)
-![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=plastic&logo=notion&logoColor=white)
-![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139)
-
----
-
-## 📊 GitHub Stats
+<h2 align="center">Software Developer | Game Tester | Tech Enthusiast</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kirankumarwq&theme=nightowl&hide_border=true&include_all_commits=false&count_private=false" height="150"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kirankumarwq&theme=nightowl&hide_border=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kirankumarwq&theme=nightowl&hide_border=true&include_all_commits=false&count_private=false&layout=compact" height="150"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&width=435&lines=Passionate+about+Software+and+Game+Testing;Building+Practical+Tech+Solutions;Aspiring+Full-Stack+Developer" alt="Typing SVG" />
+</p>
+
+## 🌟 About Me
+
+🎮 **Game Tester and Software Developer** with a BCA, currently at **Velocity Venture**. I specialize in identifying game vulnerabilities, building franchise management solutions, and collaborating on creative tech projects.
+
+📍 **Location:** India  
+💼 **Current Role:** Game Tester at **Velocity Venture**  
+📧 **Email:** [Contact Me](mailto:your.email@example.com)  
+🔗 **Portfolio:** [Portfolio (in progress)](https://kirankumarwq.github.io/kirankumarwq/) | [LinkedIn](https://linkedin.com/in/KiranKumar21)
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+🔹 **Languages:**  
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E)
+
+🔹 **Frontend:**  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=flat&logo=framer&logoColor=blue)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
+
+🔹 **Other Tools:**  
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?style=flat&logo=github&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-5C2D91?style=flat&logo=.net&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat&logo=canva&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)
+
+---
+
+## 📊 GitHub Stats & Contributions
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Kirankumarwq&show_icons=true&theme=nightowl" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kirankumarwq&theme=nightowl" width="48%" />
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kirankumarwq&layout=compact&theme=nightowl" width="48%" />
 </p>
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=Kirankumarwq&icon=1&color=0)](https://visitcount.itsvg.in)
+## 🔥 Featured Projects
+
+<table>
+  <tr>
+    <td align="center" width="250px">
+      <a href="https://github.com/kirankumarwq/Franchise-Management-System">
+        <img src="https://your-image-url.com/franchise-mgmt.png" alt="Franchise Management System" width="200px"/><br>
+        <b>Franchise Management System</b>
+      </a>
+      <p>Visual Basic & SQL<br>Inventory & Reporting for Franchises</p>
+    </td>
+    <td align="center" width="250px">
+      <a href="https://kirankumarwq.github.io/Little_Lemon_website/">
+        <img src="https://your-image-url.com/little-lemon.png" alt="Little Lemon" width="200px"/><br>
+        <b>Little Lemon Restaurant Website</b>
+      </a>
+      <p>Front-End Capstone<br>Responsive Restaurant Website</p>
+    </td>
+  </tr>
+</table>
+
+<!-- Add more project cards as needed -->
+
+---
+
+## 🤝 Connect with Me
+
+<p align="center">
+  <a href="https://linkedin.com/in/KiranKumar21"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"></a>
+  <a href="https://github.com/kirankumarwq"><img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github"></a>
+</p>
+
+---
+
+> 💡 **"Quality is not an act, it is a habit."** – Aristotle
