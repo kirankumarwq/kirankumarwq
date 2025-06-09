@@ -61,26 +61,45 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
 
 ## 🔥 Featured Projects
 
-<table>
-  <tr>
-    <td align="center" width="250px">
-      <a href="https://github.com/kirankumarwq/Franchise-Management-System">
-        <img src="https://your-image-url.com/franchise-mgmt.png" alt="Franchise Management System" width="200px"/><br>
-        <b>Franchise Management System</b>
-      </a>
-      <p>Visual Basic & SQL<br>Inventory & Reporting for Franchises</p>
-    </td>
-    <td align="center" width="250px">
-      <a href="https://kirankumarwq.github.io/Little_Lemon_website/">
-        <img src="https://your-image-url.com/little-lemon.png" alt="Little Lemon" width="200px"/><br>
-        <b>Little Lemon Restaurant Website</b>
-      </a>
-      <p>Front-End Capstone<br>Responsive Restaurant Website</p>
-    </td>
-  </tr>
-</table>
-
-<!-- Add more project cards as needed -->
+<!-- CARD LAYOUT USING HTML TABLE FOR BEST GITHUB RENDERING -->
+<p align="center">
+  <table>
+    <tr>
+      <!-- Card 1 -->
+      <td width="320px" valign="top">
+        <div align="center" style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; position: relative;">
+          <img src="https://your-image-url.com/franchise-mgmt.png" alt="Franchise Management System" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
+          <h3>Franchise Management System</h3>
+          <p>Comprehensive Visual Basic & SQL solution for inventory and reporting in franchise operations.</p>
+          <div style="width:100%; display:flex; justify-content:space-between; margin-top: 24px;">
+            <a href="https://your-live-demo-link.com" style="align-self: flex-start;">
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"align="left"/>
+            </a>
+            <a href="https://github.com/kirankumarwq/Franchise-Management-System" style="align-self: flex-end;">
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study"align="right"/>
+            </a>
+          </div>
+        </div>
+      </td>
+      <!-- Card 2 -->
+      <td width="320px" valign="top">
+        <div align="center" style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; position: relative;">
+          <img src="littlelemon.jpeg" alt="Little Lemon Restaurant Website" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
+          <h3>Little Lemon Restaurant Website</h3>
+          <p>Responsive front-end capstone project for a modern restaurant, built with React and styled for usability.</p>
+          <div style="width:100%; display:flex; justify-content:space-between; margin-top: 24px;">
+            <a href="https://kirankumarwq.github.io/Little_Lemon_website/" style="align-self: flex-start;">
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"align="left"/>
+            </a>
+            <a href="https://github.com/kirankumarwq/Little_Lemon_website" style="align-self: flex-end;">
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study" align="right"/>
+            </a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</p>
 
 ---
 
