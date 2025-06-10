@@ -5,20 +5,20 @@
 <h2 align="center">Front-End Developer | Web Developer | Tech Enthusiast</h2>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&width=435&lines=Passionate+about;Software+and+Web+Development;Building+Practical+Tech+Solutions;Aspiring+Front-End+Developer;AI+Based+Development" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&width=435&lines=Passionate+about;Software+and+Web+Development;Building+Practical+Tech+Solutions;Aspiring+Front-End+Specialist;Always+Learning+%26+Growing" />
 </p>
 
 ## 🌟 About Me
 
-I'm a <b>passionate Front-End Developer</b> with a love for creating <b>beautiful</b>, <b>functional interfaces</b>. My journey in <b>web development</b> began during my college years when I built my first website, and I've been hooked ever since.
+I'm a <b>passionate Front-End Developer</b> with a love for creating <b>beautiful</b>, <b>functional interfaces</b>. My journey in <b>web development</b> began during my college years when I built my first website and discovered the power of code to bring ideas to life.
 
-What excites me most about front-end development is the <b>perfect blend of creativity and logic</b>. I enjoy <b>solving complex problems</b> while ensuring the end result is <b>visually appealing</b> and <b>intuitive for users</b>.
+What excites me most about front-end development is the <b>perfect blend of creativity and logic</b>. I enjoy <b>solving complex problems</b> while ensuring the end result is <b>visually appealing</b> and <b>user-friendly</b>.
 
 When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contributing to open-source projects</b>, or enjoying a good cup of coffee while <b>sketching UI ideas</b>.
 
 📍 <b>Location:</b> India  
 💼 <b>Current Role:</b> Freelancer  
-📧 <b>Email:</b> [Contact Me](mailto:your.email@example.com)  
+📧 <b>Email:</b> [Contact Me](mailto:kirankumar21200211@gmail.com)  
 🔗 <b>Portfolio:</b> [Portfolio](https://kirankumarwq.github.io/kirankumarwq/) | [LinkedIn](https://linkedin.com/in/KiranKumar21)
 
 ---
@@ -71,14 +71,6 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
           <img src="https://your-image-url.com/franchise-mgmt.png" alt="Franchise Management System" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
           <h3>Franchise Management System</h3>
           <p>Comprehensive Visual Basic & SQL solution for inventory and reporting in franchise operations.</p>
-          <div style="width:100%; display:flex; justify-content:space-between; margin-top: 24px;">
-            <a href="https://your-live-demo-link.com" style="align-self: flex-start;">
-              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"align="left"/>
-            </a>
-            <a href="https://github.com/kirankumarwq/Franchise-Management-System" style="align-self: flex-end;">
-              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study"align="right"/>
-            </a>
-          </div>
         </div>
       </td>
       <!-- Card 2 -->
@@ -87,12 +79,39 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
           <img src="littlelemon.jpeg" alt="Little Lemon Restaurant Website" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
           <h3>Little Lemon Restaurant Website</h3>
           <p>Responsive front-end capstone project for a modern restaurant, built with React and styled for usability.</p>
-          <div style="width:100%; display:flex; justify-content:space-between; margin-top: 24px;">
-            <a href="https://kirankumarwq.github.io/Little_Lemon_website/" style="align-self: flex-start;">
-              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"align="left"/>
+          <p>
+            <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+            <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+          </p>
+          <div style="margin-top: 24px;">
+            <a href="https://kirankumarwq.github.io/Little_Lemon_website/">
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"/>
+            </a><br/>
+            <a href="https://github.com/kirankumarwq/Little_Lemon_website">
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study"/>
             </a>
-            <a href="https://github.com/kirankumarwq/Little_Lemon_website" style="align-self: flex-end;">
-              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study" align="right"/>
+          </div>
+        </div>
+      </td>
+      <!-- Card 3 -->
+      <td width="320px" valign="top">
+        <div align="center" style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; position: relative;">
+          <img src="https://your-image-url.com/ontime-taskmanager.png" alt="ON.time Task Manager" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
+          <h3>ON.time Task Manager</h3>
+          <p>Modern, responsive task manager app to organize and track your tasks efficiently.</p>
+          <p>
+            <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+          </p>
+          <div style="margin-top: 24px;">
+            <a href="https://your-live-demo-link.com">
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"/>
+            </a><br/>
+            <a href="https://github.com/kirankumarwq/On-Time">
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study"/>
             </a>
           </div>
         </div>
