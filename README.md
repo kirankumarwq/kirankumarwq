@@ -98,7 +98,7 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
       <!-- Card 3 -->
       <td width="320px" valign="top">
         <div align="center" style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; position: relative;">
-          <img src="https://your-image-url.com/ontime-taskmanager.png" alt="ON.time Task Manager" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
+          <img src="Screenshot 2025-06-10 141600.png" alt="ON.time Task Manager on-process" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
           <h3>ON.time Task Manager</h3>
           <p>Modern, responsive task manager app to organize and track your tasks efficiently.</p>
           <p>
