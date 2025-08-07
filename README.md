@@ -59,7 +59,6 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
 ---
 
 ## 🔥 Featured Projects
-
 <!-- CARD LAYOUT USING HTML TABLE FOR BEST GITHUB RENDERING -->
 <p align="center">
   <table>
@@ -67,15 +66,13 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
       <!-- Card 1 -->
       <td width="320px" valign="top">
         <div align="center" style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; position: relative;">
-          <img src="https://your-image-url.com/franchise-mgmt.png" alt="Franchise Management System" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
-          <h3>Franchise Management System</h3>
+                    <h3>Franchise Management System</h3>
           <p>Comprehensive Visual Basic & SQL solution for inventory and reporting in franchise operations.</p>
         </div>
       </td>
       <!-- Card 2 -->
       <td width="320px" valign="top">
         <div align="center" style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; position: relative;">
-          <img src="littlelemon.jpeg" alt="Little Lemon Restaurant Website" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
           <h3>Little Lemon Restaurant Website</h3>
           <p>Responsive front-end capstone project for a modern restaurant, built with React and styled for usability.</p>
           <p>
@@ -86,10 +83,10 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
           </p>
           <div style="margin-top: 24px;">
             <a href="https://kirankumarwq.github.io/Little_Lemon_website/">
-              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"/>
-            </a><br/>
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" align="left" alt="Live Demo"/>
+            </a>
             <a href="https://github.com/kirankumarwq/Little_Lemon_website">
-              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study"/>
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black"align="rigth" alt="Case Study"/>
             </a>
           </div>
         </div>
@@ -97,7 +94,6 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
       <!-- Card 3 -->
       <td width="320px" valign="top">
         <div align="center" style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; position: relative;">
-          <img src="Screenshot 2025-06-10 141600.png" alt="ON.time Task Manager on-process" width="200" style="border-radius: 10px; margin-bottom: 10px;" />
           <h3>ON.time Task Manager</h3>
           <p>Modern, responsive task manager app to organize and track your tasks efficiently.</p>
           <p>
@@ -105,12 +101,13 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
             <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
             <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
           </p>
-          <div style="margin-top: 24px;">
+          <div style="margin-bottom: 24px;">
+            <br><br>
             <a href="https://kirankumarwq.github.io/On-Time/">
-              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"/>
-            </a><br/>
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" align="left" alt="Live Demo"/>
+            </a>
             <a href="https://github.com/kirankumarwq/On-Time">
-              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study"/>
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" align="rigth" alt="Case Study"/>
             </a>
           </div>
         </div>
