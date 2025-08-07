@@ -18,7 +18,7 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
 📍 <b>Location:</b> India  
 💼 <b>Current Role:</b> Freelancer  
 📧 <b>Email:</b> [Contact Me](mailto:kirankumar21200211@gmail.com)  
-🔗 <b>Portfolio:</b> [Portfolio](https://kirankumarwq.github.io/kirankumarwq/) | [LinkedIn](https://linkedin.com/in/KiranKumar21)
+🔗 <b>Portfolio:</b> [Portfolio](https://kirankumarwq.github.io/kirankumarwq/) | [LinkedIn](https://linkedin.com/in/KiranKumar21).  
 📣 <b>Blog:</b> [Medium](https://medium.com/@Kiran-Kumar)
 
 ---
