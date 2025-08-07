@@ -1,6 +1,6 @@
 # 🚀 Welcome to My GitHub! I'm Kiran Kumar A
 
-![Profile Banner](https://your-image-url.com/banner.jpg)
+![Profile Banner](github profile/Brain script.gif)
 
 <h2 align="center">Front-End Developer | Web Developer | Tech Enthusiast</h2>
 
