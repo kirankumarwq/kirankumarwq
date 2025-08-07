@@ -83,10 +83,10 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
           </p>
           <div style="margin-top: 24px;">
             <a href="https://kirankumarwq.github.io/Little_Lemon_website/">
-              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" align="left" alt="Live Demo"/>
-            </a>
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white"  alt="Live Demo"/>
+            </a><br>
             <a href="https://github.com/kirankumarwq/Little_Lemon_website">
-              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black"align="rigth" alt="Case Study"/>
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" alt="Case Study"/>
             </a>
           </div>
         </div>
@@ -102,12 +102,11 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
             <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
           </p>
           <div style="margin-bottom: 24px;">
-            <br><br>
             <a href="https://kirankumarwq.github.io/On-Time/">
-              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" align="left" alt="Live Demo"/>
-            </a>
+              <img src="https://img.shields.io/badge/Live%20Demo-%232d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white"  alt="Live Demo"/>
+            </a><br>
             <a href="https://github.com/kirankumarwq/On-Time">
-              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black" align="rigth" alt="Case Study"/>
+              <img src="https://img.shields.io/badge/Case%20Study-%23e1e4e8?style=for-the-badge&logo=read-the-docs&logoColor=black"  alt="Case Study"/>
             </a>
           </div>
         </div>
