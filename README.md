@@ -61,84 +61,80 @@ When I'm not coding, you can find me <b>exploring new technologies</b>, <b>contr
 
 ## 🔥 Featured Projects
 
-<div align="center">
-  
-  <!-- Row 1: Two Projects -->
-  <table>
-    <tr>
-      <!-- Project 1 -->
-      <td width="48%" valign="top">
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 24px; color: white; min-height: 320px; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <h3 style="margin-top: 0; font-size: 20px;">💼 Little Lemon Restaurant Website</h3>
-            <p style="font-size: 14px; line-height: 1.6;">Responsive front-end capstone project for a modern restaurant, built with React and styled for optimal usability and performance.</p>
-          </div>
-          <div>
-            <p style="margin: 12px 0;">
-              <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
-              <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
-              <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
-              <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
-            </p>
-            <div style="display: flex; gap: 8px; justify-content: center;">
-              <a href="https://kirankumarwq.github.io/Little_Lemon_website/">
-                <img src="https://img.shields.io/badge/Live%20Demo-white?style=for-the-badge&logo=firefox-browser&logoColor=black" alt="Live Demo"/>
-              </a>
-              <a href="https://github.com/kirankumarwq/Little_Lemon_website">
-                <img src="https://img.shields.io/badge/GitHub-white?style=for-the-badge&logo=github&logoColor=black" alt="GitHub"/>
-              </a>
-            </div>
-          </div>
-        </div>
-      </td>
-      <!-- Project 2 -->
-      <td width="48%" valign="top">
-        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; padding: 24px; color: white; min-height: 320px; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <h3 style="margin-top: 0; font-size: 20px;">⏱️ ON.time Task Manager</h3>
-            <p style="font-size: 14px; line-height: 1.6;">Modern, responsive task management application designed to help you organize and track your daily tasks efficiently with an intuitive interface.</p>
-          </div>
-          <div>
-            <p style="margin: 12px 0;">
-              <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
-              <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
-              <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
-            </p>
-            <div style="display: flex; gap: 8px; justify-content: center;">
-              <a href="https://kirankumarwq.github.io/On-Time/">
-                <img src="https://img.shields.io/badge/Live%20Demo-white?style=for-the-badge&logo=firefox-browser&logoColor=black" alt="Live Demo"/>
-              </a>
-              <a href="https://github.com/kirankumarwq/On-Time">
-                <img src="https://img.shields.io/badge/GitHub-white?style=for-the-badge&logo=github&logoColor=black" alt="GitHub"/>
-              </a>
-            </div>
-          </div>
-        </div>
-      </td>
-    </tr>
-  </table>
+<table>
+  <tr>
+    <td width="70%">
+      <h3>🍋 Little Lemon Restaurant Website</h3>
+      <p>Responsive front-end capstone project for a modern restaurant, built with React and styled for optimal usability and performance.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
+        <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+      </p>
+    </td>
+    <td width="30%" valign="center">
+      <div style="border: 2px solid #2d72fc; border-radius: 8px; padding: 12px; text-align: center;">
+        <a href="https://kirankumarwq.github.io/Little_Lemon_website/">
+          <img src="https://img.shields.io/badge/Live%20Demo-2d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"/>
+        </a>
+        <br><br>
+        <a href="https://github.com/kirankumarwq/Little_Lemon_website">
+          <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
 
-  <!-- Row 2: One Project (Centered) -->
-  <table style="margin-top: 16px;">
-    <tr>
-      <td width="100%" valign="top">
-        <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; padding: 24px; color: white; max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; justify-content: space-between; min-height: 260px;">
-          <div>
-            <h3 style="margin-top: 0; font-size: 20px;">📊 Franchise Management System</h3>
-            <p style="font-size: 14px; line-height: 1.6;">Comprehensive Visual Basic & SQL solution designed for inventory management, reporting, and operational efficiency in franchise operations.</p>
-          </div>
-          <div>
-            <p style="margin: 12px 0;">
-              <img src="https://img.shields.io/badge/Visual%20Basic-512BD4?style=flat&logo=.net&logoColor=white" />
-              <img src="https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white" />
-            </p>
-          </div>
-        </div>
-      </td>
-    </tr>
-  </table>
+<table style="margin-top: 20px;">
+  <tr>
+    <td width="70%">
+      <h3>⏱️ ON.time Task Manager</h3>
+      <p>Modern, responsive task management application designed to help you organize and track your daily tasks efficiently with an intuitive interface.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+      </p>
+    </td>
+    <td width="30%" valign="center">
+      <div style="border: 2px solid #2d72fc; border-radius: 8px; padding: 12px; text-align: center;">
+        <a href="https://kirankumarwq.github.io/On-Time/">
+          <img src="https://img.shields.io/badge/Live%20Demo-2d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"/>
+        </a>
+        <br><br>
+        <a href="https://github.com/kirankumarwq/On-Time">
+          <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
 
-</div>
+<table style="margin-top: 20px;">
+  <tr>
+    <td width="70%">
+      <h3>📊 Franchise Management System</h3>
+      <p>Comprehensive Visual Basic & SQL solution designed for inventory management, reporting, and operational efficiency in franchise operations.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Visual%20Basic-512BD4?style=flat&logo=.net&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white" />
+      </p>
+    </td>
+    <td width="30%" valign="center">
+      <div style="border: 2px solid #2d72fc; border-radius: 8px; padding: 12px; text-align: center;">
+        <a href="#">
+          <img src="https://img.shields.io/badge/Live%20Demo-2d72fc?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Live Demo"/>
+        </a>
+        <br><br>
+        <a href="#">
+          <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
 
 ---
 
